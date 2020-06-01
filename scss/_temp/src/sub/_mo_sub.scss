@@ -1,0 +1,169 @@
+// mobile_sub.scss
+/* mobile_sub.css */
+
+@media screen and (max-width:767px){
+  #subBox {
+    width: 100%;
+    height: auto;
+
+    .sns_wrap {
+      display: none;
+    }
+
+    .bestseller_top {
+      padding: 40px 30px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 170px;
+      background-color: #0c221c;
+
+      h2 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 23px;
+        color: #fff;
+        font-weight: normal;
+        font-family: 'MyriadPro';
+
+        &:after, &::after {
+          content: ' ';
+          display: block;
+          clear: both;
+          margin: 0 auto;
+          margin-top: 3px;
+          width: 0;
+          height: 15px;
+        }
+      }
+      p {
+        margin-top: 11px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 11.8px;
+        color: #fff;
+        font-family: 'YoonGothic740';
+      }
+    }//bestseller_top
+
+    .bestseller_list {
+      margin-top: 8.5px;
+      width: 100%;
+      height: 100%;
+
+      ul {
+        width: 100%;
+        height: auto;
+
+        li {
+          width: 100%;
+          height: 12.5%;
+          border-top: 1px solid #e5e5e5;
+          border-left: 1px solid #e5e5e5;
+          border-right: 1px solid #e5e5e5;
+          box-sizing: border-box;
+
+          &:nth-of-type(8) {
+            border-bottom: 1px solid #e5e5e5;
+          }
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 7% 5%;
+            box-sizing: border-box;
+
+            &:hover,
+            &:focus {
+              background-color: #f6f6f6;
+
+              .view_btn {
+                background-color: #767676;
+                color: #fff;
+              }
+              img {
+                transform: scale(1.1);
+              }
+            }
+
+            .top_area {
+              width: 100%;
+              height: 120px;
+
+              h3 {
+                padding-top: 3px;
+                font-weight: normal;
+                font-size: 16px;
+                color: #444;
+              }
+              span {
+                font-family: 'MyriadPro';
+                font-size: 12px;
+                color: #837441
+              }
+              p {
+                width: 40%;
+                font-size: 12px;
+                margin-top: 10px;
+                color: #666;
+                word-break: keep-all;
+              }
+            }//top_area
+
+            .bottom_area {
+              position: relative;
+              margin-top: 10px;
+              width: 100%;
+              height: 70px;
+
+              .view_btn {
+                position: absolute;
+                bottom: 0;
+                width: 110px;
+                height: 30px;
+                font-size: 11px;
+                font-family: 'MyriadPro';
+                text-transform: uppercase;
+                line-height: 32px;
+                text-align: center;
+                border: 1px solid #b3b4b5;
+                box-sizing: border-box;
+              }
+              
+              .view_img {
+                position: absolute;
+                right: -5px;
+                bottom: -20px;
+                max-width: 50%;
+                width: 200px;
+                height: auto;
+
+                img {
+                  max-width: 100%;
+                  height: auto;
+                }
+              }
+            }//bottom_area
+          }//a
+        }//li
+      }//ul
+    }//bestseller_list
+
+    .topBtn {
+      position: relative;
+      margin-top: 20px;
+      bottom: 0;
+      right: -90%;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }//subBox
+}

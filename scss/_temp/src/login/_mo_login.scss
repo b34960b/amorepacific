@@ -1,0 +1,214 @@
+// mobile_login.scss
+/* mobile_login.css */
+
+@media screen and (max-width:767px){
+  body {
+
+    background-color: #0d1714;
+  
+    #loginBox {
+      height: 580px;
+
+      #c_inside {
+        width: 100%;
+        height: 100%;
+
+        .sns_wrap {
+          display: none;
+        }
+
+        .login_wrap {
+          padding-top: 20px;
+          width: 100%;
+          height: 520px;
+          box-sizing: border-box;
+
+          h2 {
+            float: left;
+            z-index: 5;
+            margin: 0 auto;
+            width: 100%;
+            height: 22px;
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+            text-transform: capitalize;
+            font-family: 'MyriadPro';
+            background-color: #fff;
+
+            &:before {
+              content: " ";
+              display: block;
+              position: absolute;
+              width: 37%;
+              top: 78px;
+              left: 4%;
+              border: 0.5px solid #e5e5e5;
+            }
+            &:after, 
+            &::after {
+              display: block;
+              content: ' ';
+              float: right;
+              clear: both;
+              position: absolute;
+              top: 78px;
+              right: 4%;
+              width: 37%;
+              border: 0.5px solid #e5e5e5;
+              box-sizing: border-box;
+            }
+          }
+
+          .login_form {
+            width: 100%;
+            height: auto;
+
+            .login_text {
+              margin: 0 auto;
+              margin-top: 42px;
+              width: 100%;
+              height: 18px;
+              font-size: 13px;
+              color: #767676;
+              text-align: center;
+            }
+            form{
+              margin: 25px 15px 0;
+              box-sizing: border-box;
+              width: auto;
+              height: 211px;
+
+              fieldset {
+                margin: 0 auto;
+                padding: 30px 25px 53px;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                border: 7px solid #eff0f1;
+
+                .form_area {
+                  width: 100%;
+                  height: 67px;
+                  background-color: #fff;
+
+                  #userId {
+                    margin-bottom: 6px;
+                    width: 100%;
+                    height: 31px;
+                    font-size: 13px;
+                    line-height: 31px;
+                    color: #767676;
+                    border: 1px solid #e0e1e1;
+                  }
+                  #userPw {
+                    width: 100%;
+                    height: 31px;
+                    font-size: 13px;
+                    line-height: 31px;
+                    color: #767676;
+                    border: 1px solid #e0e1e1;
+                  }
+                  #saveId {
+                    margin-top: 55px;
+                    margin-left: 1px;
+                  }
+                  .si_text {
+                    color: #767676;
+                    position: relative;
+                    top: -2px;
+                    margin-left: -2px;
+                    font-size: 12px;
+                  }
+                }//form_area
+
+                  .loginBtn {
+                    margin-top: 10px;
+                    width: 100%;
+                    height: 37px;
+
+                    #l_btn {
+                      width: 100%;
+                      height: 100%;
+                      background-color: #686a6c;
+                      text-align: center;
+                      border: none;
+                      font-size: 14px;
+                      font-family: 'YoonGothic740';
+                      color: #fff;
+                      line-height: 37px;
+                    }
+                  }//loginBtn
+              }//fieldset
+            }//form
+
+            .login_search {
+              margin-top: 30px;
+              padding: 0 70px;
+              box-sizing: border-box;
+              width: 100%;
+              height: 174px;
+              
+              .search {
+                p {
+                  font-size: 12px;
+                  color: #767676;
+                  font-family: 'YoonGothic740';
+                }
+                div {
+                  width: 100%;
+                  height: 100%;
+
+                  button {
+                    margin-top: 10px;
+                    width: 100%;
+                    height: 30px;
+                    font-size: 12px;
+                    color: #333;
+                    background-color: #e0e1e1;
+                    font-family: 'YoonGothic740';
+
+                    &:last-child {
+                      margin-top: 8px;
+                      margin-bottom: 20px;
+                    }
+                  }
+                }
+              }//search
+
+              .join {
+                p {
+                  font-size: 12px;
+                  color: #767676;
+                  font-family: 'YoonGothic740';
+                }
+                button {
+                  margin-top: 10px;
+                  width: 100%;
+                  height: 30px;
+                  font-size: 12px;
+                  color: #333;
+                  background-color: #e0e1e1;
+                  font-family: 'YoonGothic740';
+                }
+              }//join
+            }//login_search
+          }//login_form
+        }//login_wrap
+
+        .topBtn {
+          position: absolute;
+          bottom: 394px;
+          right: 15px;
+          width: 40px;
+          height: 40px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }//topBtn
+      }//c_inside
+    }//loginBox
+  }
+}

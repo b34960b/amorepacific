@@ -1,0 +1,13 @@
+// var.scss
+
+// color
+$primary : #292929;
+$gray : #c0c5c3;
+$yellow: #d8ab57;
+
+// line
+$line : (1px, 3px, 10px, 30px);  //nth($line, 1);
+$border : nth($line, 1) solid $primary;
+
+// font
+
