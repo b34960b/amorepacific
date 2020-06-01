@@ -19,11 +19,11 @@
       slide.children('.slide_06').find('img').attr('src','../img/slide/mo_slide_06.jpg');
 
       
-      $('.find').find('img').attr('src','../../img/btn_search.png');
+      $('.find').find('img').attr('src','../img/btn_search.png');
       
     }else if(winW > mobile && winW <= tablet){
       nowSize = device[1];
-      $('.find').find('img').attr('src','../../img/btn_search.png');
+      $('.find').find('img').attr('src','../img/btn_search.png');
       
     }else if(winW > tablet && winW <= laptop){
       nowSize = device[2];
