@@ -11,19 +11,19 @@
     if(winW <= mobile){
       nowSize = device[0];
       
-      slide.children('.slide_01').find('img').attr('src','/img/slide/mo_slide_01.jpg');
-      slide.children('.slide_02').find('img').attr('src','/img/slide/mo_slide_02.jpg');
-      slide.children('.slide_03').find('img').attr('src','/img/slide/mo_slide_03.jpg');
-      slide.children('.slide_04').find('img').attr('src','/img/slide/mo_slide_04.jpg');
-      slide.children('.slide_05').find('img').attr('src','/img/slide/mo_slide_05.jpg');
-      slide.children('.slide_06').find('img').attr('src','/img/slide/mo_slide_06.jpg');
+      slide.children('.slide_01').find('img').attr('src','../img/slide/mo_slide_01.jpg');
+      slide.children('.slide_02').find('img').attr('src','../img/slide/mo_slide_02.jpg');
+      slide.children('.slide_03').find('img').attr('src','../img/slide/mo_slide_03.jpg');
+      slide.children('.slide_04').find('img').attr('src','../img/slide/mo_slide_04.jpg');
+      slide.children('.slide_05').find('img').attr('src','../img/slide/mo_slide_05.jpg');
+      slide.children('.slide_06').find('img').attr('src','../img/slide/mo_slide_06.jpg');
 
       
-      $('.find').find('img').attr('src','/img/btn_search.png');
+      $('.find').find('img').attr('src','../img/btn_search.png');
       
     }else if(winW > mobile && winW <= tablet){
       nowSize = device[1];
-      $('.find').find('img').attr('src','/img/btn_search.png');
+      $('.find').find('img').attr('src','../img/btn_search.png');
       
     }else if(winW > tablet && winW <= laptop){
       nowSize = device[2];
